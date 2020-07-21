@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: black;
+    color: #ffffff;
+    background-color: black;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin:auto;
+
+}
+
+
+/*Navigation*/
+
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+
+
+}
+
+.nav-brand {
+    width: 50px;
+}
+
+/*Nav Left*/
+.nav-main ul{
+    display: flex;
+
+}
+
+.nav-main li{
+    padding: 10px;
+}
+
+.nav-main ul li a {
+    padding: 2px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 0.3px solid #ffffff;
+
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+
+
+/*SHOWCASE, IMAGEN DE PAGINA*/
+hr {
+    margin: 13px 0;
+}
+.showcase {
+    width: 100%;
+    background: url(https://images2.alphacoders.com/867/867912.png) no-repeat center center/cover;
+    height: 500px;
+    padding-bottom: 50px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.showcase:hover{
+    opacity: .7;
+}
+
+
+.showcase h2 {
+    color: black;
+    padding: 5px;
+}
+
+.showcase p {
+    color: black ;
+    padding: 5px;
+}
+
+.btn {
+    cursor:pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+
+/*Tarjetas de noticias*/
+
+.newsCards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+
+} 
+
+.newsCards img {
+    width: 100%;
+    height: 180px;
+    
+}
+
+.newsCards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.newsCards a {
+    padding: 10px 0;
+    color: #262626;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.newsCards a:hover {
+    text-decoration: underline;
+
+}
+
